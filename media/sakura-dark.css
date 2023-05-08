@@ -150,12 +150,34 @@ pre > code {
   font-size: 1em;
 }
 
-#img-lain img {
+#img-mai img {
   max-width: 250px;
-  width: 45vw;
+  width: 32vw;
   position: fixed;
   right: 0;
   bottom: 0;
   margin-bottom: 0;
 }
+
+#img-small img {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  #img-mai img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px){
+  #img-small img {
+    display: block;
+    max-width: 150px;
+    width: 32vw;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+  }
   
+}
